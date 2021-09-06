@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgblue{
+            background-color: rgb(130, 188, 238);
+            color: white;
+        }
+
+        .inputData{
+            width: 80%;
+            height: 70vh;
+            margin: auto;
+            padding-top: 4rem;
+            display: grid;
+            grid-column: 2;
+            text-align: center;
+        }
+
+        input{
+            margin: .5rem;
+            padding: .2rem;
+            border: 2px solid black;
+            border-radius: 7px;
+            outline: none;
+            max-height: 3rem;
+            font-size: 1.5rem
+        }
+
+        label{
+            font-size: 1.7rem;
+            padding-top: .5rem;
+        }
+
+        .btnSubmit{
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="submit"]{
+            font-size: 1.5rem;
+            padding: .5rem;
+            margin: 1rem;
+            width: 15rem;
+            
+        }
+        h1{
+            text-align: center;
+            color: red;
+            padding-top: 1rem;
+        }
+        span{
+            text-align: left;
+            color: black;
+            font-weight: 900;
+            margin-left: .5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bgblue">
+        <h1> Employee Registration form</h1>
+        <form action="/employee" method="POST">
+            <div class="inputData">
+                <input type="text" name="fullName" placeholder="Your First Name *" required >
+                <input type='email'name="email"  placeholder="Your Email Address *" required >
+                <input type="number" name="mobile"  placeholder="Your Phone Number *" required >
+                <input type="text" name="city"  placeholder="Your City name *" required >
+                <input type='password' name="password"  placeholder=" Password *" required >
+            </div>
+
+            <div class="btnSubmit">
+                <input type="submit" class="btnregister" value="Register">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
